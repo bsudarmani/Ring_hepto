@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header ">
+    <div class="bg-danger p-1 ">
+      <p class="text-light text-center header-head">Translation+Revision (EN-FR/FR-EN) from $0.035/word</p>
+      <p class=" text-center text-light  header-subhead">If you can’t pay freelance translators well, talk to The Engagement Ring
+        Translation now.</p>
+    </div>
+    <nav class="navbar navbar-expand-sm  ">
+      <div class="container">
+        <a class="navbar-brand ml-4 d-none d-md-block" href="#">
+          <img src="./images/logo.jpeg" width="70px" height="70px" class="d-inline-block mx-5" alt="">
+          <span class="nav-head ">The Engagement Ring Translation</span>
+        </a>
+        <a class="navbar-brand ml-2 d-md-none d-sm-block" href="#">
+          <img src="./images/logo.jpeg" width="80px" height="80px" class="d-inline-blockmx mx-5" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link  nav-subhead mx-3  my-3"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  nav-subhead mx-3 my-3" href="#">Blog/Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-dark mx-3 nav-subhead text-light my-3 nav-subhead-btn">Contact Us</a>
+            </li>
+        </div>
+    </nav>
+  </div>
+  <!-- home -->
+  <!-- <div class="home">
+    <div class="container row">
+      <div class="col-sm-9 col-md-6 col-lg-6 col-xl-6 my-5">
+        <div class="card ">
+          <div class="card-body">
+            <p class="card-title ">Are you a Winner?</p>
+            <p class="card-text">
+              A pragmatic translation company founded to help serious fellow translation companies get excellent
+              translations while maintaining or maximizing their margins in the context of a suffocating price pressure,
+              and while avoiding the risks associated with hiring demotivated and unreliable freelance translators.
+            </p>
+            <a href="#" class="btn btn-danger mx-5 px-5 card-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-6 col-lg-6 col-xl-6 my-5">
+        <img src="./images/home2-removebg.png" height="350" width="350" class="home2" />
+      </div>
+    </div>
+    
+  </div> -->
+  <div class="container-fluid banner_container p-5  text-center d-none d-md-block ">
+    <div class="row p-5">
+      <div class="d-md-flex flex-md-row justify-content-center">
+      <div class=" col-lg-5 col-xl-3 bg-white card_container p-3 mt-3 mb-3 ml-3 text-left">
+        <h3 class="card_title ">Are   you  a Winner ?</h3>
+        <p class="card_text ">A pragmatic translation company founded to help serious fellow translation companies get excellent translations while maintaining or maximizing their margins in the context of a suffocating price pressure, and while avoiding the risks associated with hiring demotivated and unreliable freelance translators.</p>
+        <a class="btn btn-danger card_button text-light ">Contact Us</a>
+      </div>
+      <div class=" col-xl-9 m-auto ">
+        <i class="fa-solid fa-play play_icon"></i>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="container-fluid banner_container1 text-center pt-2 d-md-none ">
+    <div class="row">
+      <div class="col-12 m-auto pt-3 pb-2 mb-3 mt-3">
+        <i class="fa-solid fa-play play_icon"></i>
+      </div>
+      <div class="col-12 bg-white card_container1 mt-5 p-3  text-left">
+        <h3 class="card_title">Are you a Winner?</h3>
+        <p class="card_text">A pragmatic translation company founded to help serious fellow translation companies get excellent translations while maintaining or maximizing their margins in the context of a suffocating price pressure, and while avoiding the risks associated with hiring demotivated and unreliable freelance translators.</p>
+        <a class="btn btn-danger card_button text-light">Read More</a>
+      </div>
+    </div>
+  </div>
+     <!-- process -->
+     <div class="container mt-5 d-none d-md-block">
+      <div class="row">
+          <div class="col-12 text-center mb-4">
+              <h3 class="heading">Our Process</h3>
+          </div>
+          <div class="col-12">
+              <div class="d-flex flex-row text-center">
+                  <div class="col-2 process_container">
+                      <img src="./images/processimg1-removebg-preview.png" class="pro-img"/>
+                      <p onclick="process1()" id="processa1" class="p">How he Work</p>
+                  </div>
+                  <div class="col-2 process_container">
+                      <img src="./images/processimg2-removebg-preview.png" class="pro-img"/>
+                      <p onclick="process2()" id="processa2" class="p">Quality assurance with xbench,Antidote,Grammarly</p>
+                  </div>
+                  <div class="col-2 process_container">
+                      <img src="./images/processimg3-removebg-preview.png" class="pro-img"/>
+                      <p onclick="process3()" id="processa3">LISA quality assesment</p>
+                  </div>
+                  <div class="col-2 process_container">
+                      <img src="./images/processimg4-removebg-preview.png" class="pro-img"/>
+                      <p onclick="process4()" id="processa4">Quality Mass</p>
+                  </div>
+                  <div class="col-2 process_container">
+                      <img src="./images/processimg5-removebg-preview.png" class="pro-img"/>
+                      <p onclick="process5()" id="processa5">CAT Tools</p>
+                  </div>
+                  <div class="col-2 process_container">
+                      <img src="./images/processimg6-removebg-preview.png" class="pro-img"/>
+                      <p onclick="process6()" id="processa6">MTPE</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12">
+              <p id="content" class="process_para p-3">At The Engagement Ring Translation, each translation and MTPE project is systematically taken care of by two linguists: A translator/post-editor and a revisor. This time-consuming process leads to rewarding results. We deliver with confidence, safe in the idea that you, your client, and the reader of the translation will be happy. We deliver happiness.</p>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-5 d-md-none">
+      <div class="row">
+          <div class="col-12 heading text-center mb-3">
+              <h3>Our Process</h3>
+          </div>
+          <div class="col-12">
+              <div class="smallprocontainer" id="smallprocon1">
+                  <div class="d-flex flex-row justify-content-between mt-2">
+                      <p class="mr-5 text-left" id="smallprop1">How we work</p>
+                      <i class="fa-solid fa-plus ml-5 text-right iconplus" onclick="smallprocess1()" id="iconid1"></i>          
+                  </div>
+              </div>
+              <div class="mt-1">
+                  <p id="smallprocontent1"></p>
+              </div>
+              <div class="smallprocontainer" id="smallprocon2">
+                  <div class="d-flex flex-row justify-content-between mt-2">
+                      <p class="mr-5 text-left" id="smallprop2">Quality assurance with xbench,Antidote,Grammarly</p>
+                      <i class="fa-solid fa-plus ml-5 text-right iconplus" onclick="smallprocess2()" id="iconid2"></i>          
+                  </div>
+              </div>
+              <div class="mt-1">
+                  <p id="smallprocontent2"></p>
+              </div>
+              <div class="smallprocontainer" id="smallprocon3">
+                  <div class="d-flex flex-row justify-content-between mt-2">
+                      <p class="mr-5 text-left" id="smallprop3">LISA Quality assesment</p>
+                      <i class="fa-solid fa-plus ml-5 text-right iconplus" onclick="smallprocess3()" id="iconid3"></i>          
+                  </div>
+              </div>
+              <div class="mt-1">
+                  <p id="smallprocontent3"></p>
+              </div>
+              <div class="smallprocontainer" id="smallprocon4">
+                  <div class="d-flex flex-row justify-content-between mt-2">
+                      <p class="mr-5 text-left" id="smallprop4">Quality Mass</p>
+                      <i class="fa-solid fa-plus ml-5 text-right iconplus" onclick="smallprocess4()" id="iconid4"></i>          
+                  </div>
+              </div>
+              <div class="mt-1">
+                  <p id="smallprocontent4"></p>
+              </div>
+              <div class="smallprocontainer" id="smallprocon5">
+                  <div class="d-flex flex-row justify-content-between mt-2">
+                      <p class="mr-5 text-left" id="smallprop5">CAT tools</p>
+                      <i class="fa-solid fa-plus ml-5 text-right iconplus" onclick="smallprocess5()" id="iconid5"></i>          
+                  </div>
+              </div>
+              <div class="mt-1">
+                  <p id="smallprocontent5"></p>
+              </div>
+              <div class="smallprocontainer" id="smallprocon6">
+                  <div class="d-flex flex-row justify-content-between mt-2">
+                      <p class="mr-5 text-left" id="smallprop6">MTPE</p>
+                      <i class="fa-solid fa-plus ml-5 text-right iconplus" onclick="smallprocess6()" id="iconid6"></i>          
+                  </div>
+              </div>
+              <div class="mt-1">
+                  <p id="smallprocontent6"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- offer -->
+  <div class="offer mt-3">
+    <p class="text-center offer-head">Our offer</p>
+    <p class="text-center offer-subhead ">with The Engagement Ring translation, you get</p>
+    <div class="row mx-4 offer_body">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class=" offer-card my-3">
+          <div class="card-body">
+            <i class="fa-solid fa-bolt  mx-2 fa-2x"></i>
+            <span class="offer-text">Translation</span>
+          </div>
+        </div>
+        <div class=" offer-card my-3">
+          <div class="card-body">
+            <i class="fa-solid fa-bolt  mx-2 fa-2x"></i>
+            <span class="offer-text">Pay only what you would have paid freelancers </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class=" offer-card my-3">
+          <div class="card-body">
+            <i class="fa-solid fa-bolt  mx-2 fa-2x"></i>
+            <span class="offer-text">Revision from our team</span>
+          </div>
+        </div>
+        <div class=" offer-card my-3">
+          <div class="card-body">
+            <i class="fa-solid fa-bolt  mx-2 fa-2x"></i>
+            <span class="offer-text">Experience our translation+revison and MTPE service from $0.035/word</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-dark offer_button ">Contact Us</a>
+    </div>
+  </div>
+  <!-- trust  -->
+  <div class="trust m-5">
+    <h4 class="text-center trust_head">Trusted by</h4>
+    <div class="img-world mb-5">
+      <img src="./images/world.jpeg" alt="World" class="world">
+    </div>
+    <p class=" text-center trust_foot">Discover our free tier.Up to 10000 free test.</p>
+  </div>
+  <div class="container trust2 mb-5">
+    <div class=" row">
+      <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-6 trust2_top">
+        <h1 class="trust2_head"> Talk to us today</h1>
+        <div class="mb-3">
+          <input type="name" class="form-control p-3" id="companyname" placeholder="Company name">
+        </div>
+        <div class="mb-3">
+          <input type="name" class="form-control p-3" id="personname" placeholder="Contact person's name">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control p-3" id="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <input type="name" class="form-control p-3" id="qrwhatsapp" placeholder="Skype QR WhatsApp">
+        </div>
+        <div class="mb-3">
+          <input type="name" class="form-control p-3" id="profilelink" placeholder="Link to Profile on Proz.com (to check your repulation)">
+        </div>
+        <a class="btn btn-dark btn-lg mb-3 trust2_btn">Submit</a>
+        <p class="trust2_foot">Contact also us through</p>
+         <div class="row">
+           <div class="col-4 ">
+             <button class="btn large-card1 large-card">
+                <span class="skype_text m-2">Skype</span>
+                <img src="./images/skype.jpg" height="50" width="50" alt="Skype" class="skype_img">
+             </button>
+           </div>
+           <div class="col-4">
+             <button class="btn large-card2 large-card">
+                <span class="whatsapp_text m-2">WhatsApp</span>
+                <img src="./images/whatsApp2.jpg" height="50" width="50" alt="WhatsApp" class="whatsapp_img">
+             </button>
+           </div>
+         </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+        <img src="./images/trust2.jpg" height="650" width="575" class="trust2_img">
+      </div>
+    </div>
+  </div>
+  <!-- our team 2 -->
+<h1 class="text-center our-team mb-4">Our team</h1>
+<div id="carouselExample" class="container carousel slide top-content" data-bs-touch="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row top-head">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card1">
+                        <img src="./images/team1.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Audey Ange Ponde</h5>
+                            <p class="team_subhead">Revisor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card2">
+                        <img src="./images/team2.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Robert Sonkerng</h5>
+                            <p class="team_subhead">Senior Translator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card3">
+                        <img src="./images/team3.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Angelot Youssa</h5>
+                            <p class="team_subhead">Senior Translator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row top-head">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card1">
+                        <img src="./images/team1.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Audey Ange Ponde</h5>
+                            <p class="team_subhead">Revisor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card2">
+                        <img src="./images/team2.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Robert Sonkerng</h5>
+                            <p class="team_subhead">Senior Translator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card3">
+                        <img src="./images/team3.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Angelot Youssa</h5>
+                            <p class="team_subhead">Senior Translator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row top-head">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card1">
+                        <img src="./images/team1.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Audey Ange Ponde</h5>
+                            <p class="team_subhead">Revisor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card2">
+                        <img src="./images/team2.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Robert Sonkerng</h5>
+                            <p class="team_subhead">Senior Translator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <div class="card small-card mb-5 small-card3">
+                        <img src="./images/team3.png" class="card-img-top" alt="Slide-img-6" />
+                        <div class="card-body">
+                            <h5 class="team_head">Angelot Youssa</h5>
+                            <p class="team_subhead">Senior Translator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <i class="fas fa-arrow-circle-left custom-icon-size text-dark" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <i class="fas fa-arrow-circle-right custom-icon-size text-dark" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- the blog -->
+<div class="blog">
+  <h1 class="blog_head text-center ">Blog</h1>
+  <div class=" row blog_row">
+    <div class=" col-xl-4 col-sm-10 col-md-4 col-lg-4 ">
+      <div class="card blog_card1">
+        <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+            <img src="./images/blog1.png" class="blog1_img img-fluid"/>
+            <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+        <div class="card-body">
+            <button class="mt-2 blog_btn btn mb-2 py-1"><i class="fa-solid fa-calendar blog_cal text-secondary mx-2"></i><span class="blog_btext">March 3, 2024</span></button>
+            <h5 class="blog_subhead ">The Engagement Ring Translation</h5>
+            <p class="blog_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#!" class="text-danger" data-mdb-ripple-init>Read More</a>
+        </div>
+    </div>
+    </div>
+
+    <div class=" col-xl-4 col-sm-10 col-md-4 col-lg-4">
+      <div class="card blog_card2">
+        <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+            <img src="./images/blog2.png" class="blog2_img img-fluid"/>
+            <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+        <div class="card-body">
+            <button class="mt-2 blog_btn btn mb-2 py-1"><i class="fa-solid fa-calendar blog_cal text-secondary mx-2"></i><span class="blog_btext">March 3, 2024</span></button>
+            <h5 class="blog_subhead ">The Engagement Ring Translation</h5>
+            <p class="blog_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#!" class="text-danger" data-mdb-ripple-init>Read More</a>
+        </div>
+    </div>
+    </div>
+
+    <div class=" col-xl-4 col-sm-10 col-md-4 col-lg-4">
+      <div class="card blog_card3">
+        <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+            <img src="./images/blog3.png" class="blog3_img img-fluid"/>
+            <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+        <div class="card-body">
+            <button class="mt-2 blog_btn btn mb-2 py-1"><i class="fa-solid fa-calendar blog_cal text-secondary mx-2"></i><span class="blog_btext">March 3, 2024</span></button>
+            <h5 class="blog_subhead ">The Engagement Ring Translation</h5>
+            <p class="blog_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#!" class="text-danger blog_fbtn" data-mdb-ripple-init>Read More</a>
+        </div>
+    </div>
+    </div>
+    
+  </div>
+</div>
+<!-- pagination -->
+<div class="row pagination_final">
+  <div class="col-12 pagination_head d-flex justify-content-center align-items-center ">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">4</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+  <!-- footer -->
+  <div class=" footer row pt-5">
+    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-4 ">
+      <div class="container">
+        <h4 class=" text-light my-4 mx-4 footer-head">The Engagement Ring Translation</h4>
+        <p class="footer-subhead text-light mx-4">We provide high-end, premium Translation services to prestigious and
+          self-demanding brands,origanisations,and individuals in Cameroon and worldwide.</p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 my-3">
+      <ul class="footer-ul">
+        <h4 class=" text-light   my-2 footer-head footer-a mb-4">Quick links</h4>
+        <li class="mb-4"><a href="#home" class="text-light  footer-a footer-subhead">Home</a></li>
+        <li class="mb-4"><a href="#home" class="text-light  footer-a footer-subhead">Blog/Deals</a></li>
+        <li class="mb-4"><a href="#home" class="text-light  footer-a footer-subhead">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 my-3">
+      <ul class="footer-ul">
+        <h4 class=" text-light my-2 footer-head footer-a mb-4">Get our app</h4>
+        <li class="mb-4"><a href="#home" class="text-light  footer-a footer-subhead">Play Store</a></li>
+        <li class="mb-4"><a href="#home" class="text-light  footer-a footer-subhead">App Store</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2 my-3 follow">
+      <h4 class="text-light  footer-head mx-2 my-2 mb-4">Follow Us</h4>
+      <i class="fa-brands fa-instagram text-light fa-1x mx-2"></i>
+      <i class="fa-brands fa-facebook text-light fa-1x mx-2"></i>
+      <i class="fa-brands fa-twitter text-light fa-1x mx-2"></i>
+      <i class="fa-brands fa-youtube text-light fa-1x mx-2"></i>
+      </ul>
+    </div>
+    <hr class="text-light" style="border: 1px solid gray">
+    <footer class="footer1">
+      <div class="col">
+        <p class="text-center text-light footer-subhead">Copyright &copy; 2024,The Engagement Ring Translation</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+        const tabs = document.querySelectorAll('.tab_btn');
+        const all_content = document.querySelectorAll('.content');
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', (e) => {
+                tabs.forEach(tab => { tab.classList.remove('active') });
+                tab.classList.add('active');
+                var line = document.querySelector('.line');
+                line.style.width = e.target.offsetWidth + "px";
+                line.style.left = e.target.offsetLeft + "px";
+                all_content.forEach(content => { content.classList.remove('active') })
+                all_content[index].classList.add('active');
+            })
+        })
+
+  document.getElementById('processa1').classList.add('active');
+  document.getElementById('processa1').click(); // Trigger click on the first paragraph
+  
+  function setActive(id) {
+      // Remove "active" class from all paragraph tags
+      var paragraphs = document.querySelectorAll('.process_container p');
+      paragraphs.forEach(function(paragraph) {
+          paragraph.classList.remove('active');
+      });
+  
+      // Add "active" class to the clicked paragraph
+      var activeParagraph = document.getElementById(id);
+      activeParagraph.classList.add('active');
+  }
+  
+  function process1() {
+      setActive('processa1');
+      var content = document.getElementById('content');
+      content.innerHTML = "At The Engagement Ring Translation, each translation and MTPE project is systematically taken care of by two linguists: A translator/post-editor and a revisor. This time-consuming process leads to rewarding results. We deliver with confidence, safe in the idea that you, your client, and the reader of the translation will be happy. We deliver happiness..";
+  }
+  
+  function process2() {
+      setActive('processa2');
+      var content = document.getElementById('content');
+      content.innerHTML = "We use tools like xbench, Antidote, and Grammarly to ensure quality.";
+  }
+  
+  function process3() {
+      setActive('processa3');
+      var content = document.getElementById('content');
+      content.innerHTML = "We have developed a Localization Industry Standards Association (LISA) form for internal quality assessment.";
+  }
+  
+  function process4() {
+      setActive('processa4');
+      var content = document.getElementById('content');
+      content.innerHTML = "We use various metrics to measure and ensure the quality of our translations.";
+  }
+  
+  function process5() {
+      setActive('processa5');
+      var content = document.getElementById('content');
+      content.innerHTML = "We utilize Computer-Assisted Translation (CAT) tools for efficiency and consistency.";
+  }
+  
+  function process6() {
+      setActive('processa6');
+      var content = document.getElementById('content');
+      content.innerHTML = "We offer Machine Translation Post-Editing (MTPE) services for faster turnaround times.";
+  }
+  function smallprocess1() {
+      toggleProcessContent('iconid1', 'smallprop1', 'smallprocon1', 'smallprocontent1', "We ensure each project is handled by skilled linguists.");
+  }
+  
+  function smallprocess2() {
+      toggleProcessContent('iconid2', 'smallprop2', 'smallprocon2', 'smallprocontent2', "We use tools like xbench, Antidote, and Grammarly to ensure quality.");
+  }
+  
+  function smallprocess3() {
+      toggleProcessContent('iconid3', 'smallprop3', 'smallprocon3', 'smallprocontent3', "We have developed a Localization Industry Standards Association (LISA) form for internal quality assessment.");
+  }
+  
+  function smallprocess4() {
+      toggleProcessContent('iconid4', 'smallprop4', 'smallprocon4', 'smallprocontent4', "We use various metrics to measure and ensure the quality of our translations.");
+  }
+  
+  function smallprocess5() {
+      toggleProcessContent('iconid5', 'smallprop5', 'smallprocon5', 'smallprocontent5', "We utilize Computer-Assisted Translation (CAT) tools for efficiency and consistency.");
+  }
+  
+  function smallprocess6() {
+      toggleProcessContent('iconid6', 'smallprop6', 'smallprocon6', 'smallprocontent6', "We offer Machine Translation Post-Editing (MTPE) services for faster turnaround times.");
+  }
+  
+  function toggleProcessContent(iconId, propId, proconId, contentId, contentText) {
+      var icon = document.getElementById(iconId);
+      var para = document.getElementById(propId);
+      var procon = document.getElementById(proconId);
+      var con = document.getElementById(contentId);
+  
+      if (icon.classList.contains('fa-plus')) {
+          icon.classList.remove('fa-plus');
+          icon.classList.add('fa-minus');
+          con.innerHTML = contentText;
+          con.style.backgroundColor = "#F5F5F5";
+          procon.style.backgroundColor = "#F5F5F5";
+          procon.style.borderTopColor = "black";
+          con.style.padding = "10px";
+          para.style.color = "#D93A36";
+      } else {
+          icon.classList.remove('fa-minus');
+          icon.classList.add('fa-plus');
+          con.innerHTML = "";
+          procon.style.borderTopColor = "";
+          con.style.backgroundColor = "";
+          con.style.marginTop = "0";
+          con.style.padding = "0";
+          para.style.color = "black";
+      }
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
