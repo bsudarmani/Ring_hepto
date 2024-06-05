@@ -691,7 +691,7 @@
     max-width: none;
 }
 .small-card1, .small-card2, .small-card3 {
-    height: 450px;
+    height: 270px;
     width: 170px;
     margin: 0px 10px;
 }
@@ -857,8 +857,8 @@
         .blog {
             width: 350px;
             height: 200px;
-            margin-left: 10px;
-            margin-right: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
             margin-bottom: 370px;
         }
     
