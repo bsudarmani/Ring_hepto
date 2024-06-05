@@ -213,7 +213,7 @@
     font-size: 16px;
     font-weight: 600;
 }
-@media (min-width: 375px) and (max-width: 575px)
+@media (min-width: 300px) and (max-width: 575px)
 {
  .offer-card{
    width:320px;
@@ -360,7 +360,7 @@
     /* max-width: 100%; */
     max-width: 1200px;
 }
-@media (min-width: 375px) and (max-width: 575px)
+@media (min-width: 300px) and (max-width: 575px)
 {
     .world{
         width: 350px;
